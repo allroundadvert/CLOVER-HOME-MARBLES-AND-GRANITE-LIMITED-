@@ -10,36 +10,49 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #eef2ff;
-  color: #333;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  color: #f5f5f5;
 }
 
-header {
-  width: 100%;
-  height: auto;
-}
-
+/* HEADER */
 header img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* INTRO */
 .intro {
   text-align: center;
-  padding: 20px;
-  background: #1e3a8a;
-  color: white;
+  padding: 25px;
+  background: linear-gradient(45deg, #b8860b, #ffd700);
+  color: #000;
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(255,215,0,0.5);
 }
 
+/* FORM SECTION */
 .form-section {
   padding: 20px;
   margin: 20px;
-  border: 2px solid #1e3a8a;
-  border-radius: 8px;
+  border: 1px solid gold;
+  border-radius: 10px;
+  background: rgba(255, 215, 0, 0.05);
+  box-shadow: 0 0 10px rgba(255,215,0,0.3);
 }
 
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  background: #111;
+  color: white;
+}
+
+/* PRODUCTS */
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -48,21 +61,38 @@ header img {
 
 .products label {
   width: calc(50% - 10px);
-  background: #e0e7ff;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #1e3a8a;
+  background: #111;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid gold;
+  transition: 0.3s;
 }
 
+.products label:hover {
+  background: gold;
+  color: black;
+  transform: scale(1.03);
+}
+
+/* BUTTONS */
 button {
   width: 100%;
-  padding: 10px;
-  background: #1e3a8a;
-  color: white;
+  padding: 12px;
+  background: linear-gradient(45deg, gold, #b8860b);
+  color: black;
   border: none;
   margin-top: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px gold;
 }
 
+button:hover {
+  transform: scale(1.03);
+}
+
+/* WHATSAPP */
 .buttons {
   display: flex;
   justify-content: center;
@@ -70,26 +100,30 @@ button {
 }
 
 .buttons a {
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #25D366;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
+  box-shadow: 0 0 10px #25D366;
 }
 
+/* ADDRESS */
 .address {
   text-align: center;
-  padding: 15px;
-  border: 2px solid #1e3a8a;
+  padding: 20px;
+  border: 1px solid gold;
   margin: 20px;
+  border-radius: 10px;
+  background: rgba(255,215,0,0.05);
 }
 
+/* MAP */
 iframe {
   width: 100%;
   height: 300px;
   border: none;
-  border-radius: 8px;
 }
 </style>
 </head>
@@ -97,7 +131,7 @@ iframe {
 <body>
 
 <header>
-<img src="YOUR_FLYER_IMAGE_LINK_HERE">
+<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED-/de862d291044131d7efdc7709b37a285138a52ae/Screenshot_20260318-151527.jpg">
 </header>
 
 <div class="intro">
