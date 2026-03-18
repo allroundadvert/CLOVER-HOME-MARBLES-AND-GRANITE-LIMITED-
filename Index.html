@@ -6,130 +6,167 @@
 <title>CLOVER HOME MARBLES AND GRANITES LTD</title>
 
 <style>
+/* --- GLOBAL STYLES --- */
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0f172a, #020617);
-  color: #e2e8f0;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0f1c;
+  color: #e0e0e0;
 }
 
-/* HEADER */
+/* --- HEADER --- */
 header img {
   width: 100%;
   display: block;
-  border-bottom: 3px solid #38bdf8;
+  border-bottom: 4px solid #00f6ff;
+  box-shadow: 0 0 15px #00f6ff;
 }
 
-/* INTRO */
+/* --- INTRO SECTION --- */
 .intro {
   text-align: center;
-  padding: 25px;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
-  border-bottom: 2px solid #38bdf8;
-  box-shadow: 0 0 15px rgba(56,189,248,0.3);
-  font-weight: bold;
-}
-
-/* FORM SECTION */
-.form-section {
-  padding: 20px;
-  margin: 20px;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, rgba(0,246,255,0.1), rgba(0,246,255,0.02));
+  border-left: 4px solid #00f6ff;
+  border-right: 4px solid #00f6ff;
   border-radius: 12px;
-  background: rgba(30,41,59,0.7);
-  border: 1px solid #38bdf8;
-  box-shadow: 0 0 20px rgba(56,189,248,0.2);
+  margin: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0,246,255,0.2);
 }
 
-/* INPUTS */
+/* --- FORM SECTION --- */
+.form-section {
+  background: #101828;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px;
+  box-shadow: 0 0 20px #00f6ff50;
+  border: 1px solid #00f6ff;
+}
+
+/* --- FORM INPUTS --- */
 input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 6px;
-  border: 1px solid #38bdf8;
-  background: #020617;
-  color: #e2e8f0;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #00f6ff;
+  background: #0d1321;
+  color: #e0e0e0;
+  font-size: 1rem;
 }
 
 input:focus {
-  box-shadow: 0 0 10px #38bdf8;
   outline: none;
+  box-shadow: 0 0 12px #00f6ff;
 }
 
-/* PRODUCTS - 2 COLUMNS FIXED */
+/* --- PRODUCTS GRID --- */
 .products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .products label {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #38bdf8;
-  background: linear-gradient(145deg, #020617, #0f172a);
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #0d1321;
+  border: 1px solid #00f6ff;
+  cursor: pointer;
+  font-weight: 500;
   transition: 0.3s;
 }
 
 .products label:hover {
-  background: #38bdf8;
-  color: black;
+  background: #00f6ff;
+  color: #0a0f1c;
   transform: scale(1.05);
-  box-shadow: 0 0 15px #38bdf8;
+  box-shadow: 0 0 15px #00f6ff;
 }
 
-/* BUTTON */
+.products input {
+  margin-right: 10px;
+}
+
+/* --- BUTTONS --- */
 button {
   width: 100%;
   padding: 14px;
-  margin-top: 10px;
-  border-radius: 8px;
   border: none;
+  border-radius: 10px;
+  font-size: 1rem;
   font-weight: bold;
-  color: black;
-  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
-  box-shadow: 0 0 15px #38bdf8;
+  background: linear-gradient(90deg, #00f6ff, #0ff, #00bcd4);
+  color: #0a0f1c;
   cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px #00f6ff;
 }
 
 button:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 25px #00f6ff;
 }
 
-/* WHATSAPP */
+/* WhatsApp button */
 .buttons {
   text-align: center;
-  margin-top: 15px;
+  margin: 20px 0;
 }
 
 .buttons a {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 28px;
+  border-radius: 10px;
   background: #25D366;
   color: white;
-  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
   box-shadow: 0 0 15px #25D366;
+  transition: 0.3s;
 }
 
-/* ADDRESS */
+.buttons a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #25D366;
+}
+
+/* --- ADDRESS --- */
 .address {
-  text-align: center;
-  padding: 20px;
-  margin: 20px;
+  background: #101828;
+  border: 1px solid #00f6ff;
   border-radius: 12px;
-  background: rgba(30,41,59,0.6);
-  border: 1px solid #38bdf8;
-  box-shadow: 0 0 15px rgba(56,189,248,0.2);
+  padding: 25px;
+  margin: 20px;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 0 20px #00f6ff50;
+  line-height: 1.6;
 }
 
-/* MAP */
+/* --- MAP --- */
 iframe {
   width: 100%;
   height: 300px;
-  border: none;
+  border-radius: 12px;
+  margin: 20px 0;
+  border: 0;
+  box-shadow: 0 0 15px #00f6ff50;
+}
+
+/* --- MEDIA --- */
+@media(max-width:600px){
+  .products {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
@@ -137,7 +174,7 @@ iframe {
 <body>
 
 <header>
-<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED-/de862d291044131d7efdc7709b37a285138a52ae/Screenshot_20260318-151527.jpg">
+<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED-/de862d291044131d7efdc7709b37a285138a52ae/Screenshot_20260318-151527.jpg" alt="CLOVER HOME MARBLES">
 </header>
 
 <div class="intro">
@@ -188,7 +225,6 @@ Chat on WhatsApp
 Besides National Block Industry,<br>
 Along Benin/Onitsha Express Way,<br>
 Bonsaac, Asaba, Delta State<br><br>
-
 📞 +234 913 281 3864<br>
 📞 +234 916 317 8828<br>
 📧 cloverhome102@gmail.com
