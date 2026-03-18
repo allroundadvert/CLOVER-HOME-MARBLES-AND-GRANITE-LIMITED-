@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLOVER HOME MARBLES AND GRANITES LTD</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eef2ff;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.intro {
+  text-align: center;
+  padding: 20px;
+  background: #1e3a8a;
+  color: white;
+  font-weight: bold;
+}
+
+.form-section {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #1e3a8a;
+  border-radius: 8px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.products label {
+  width: calc(50% - 10px);
+  background: #e0e7ff;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #1e3a8a;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.buttons a {
+  padding: 10px 20px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.address {
+  text-align: center;
+  padding: 15px;
+  border: 2px solid #1e3a8a;
+  margin: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="YOUR_FLYER_IMAGE_LINK_HERE">
+</header>
+
+<div class="intro">
+CLOVER HOME MARBLES AND GRANITES LTD <br>
+Marbles and Granites Slab / Floor Tiles Supplier <br><br>
+
+SERVICES:<br>
+Installation of Marbles, Granites Slab & Floor Tiles, Kitchen Countertops, Staircase, Tombstone, Write-ups, Pulpit, General Contractors<br><br>
+
+BENEFITS:<br>
+Quality Products, Excellent Service
+</div>
+
+<section class="form-section">
+<h2>Place Your Order</h2>
+
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Your Phone" required>
+
+<div class="products">
+  <label><input type="checkbox" value="Marble Slab"> Marble Slab</label>
+  <label><input type="checkbox" value="Granite Slab"> Granite Slab</label>
+  <label><input type="checkbox" value="Floor Tiles"> Floor Tiles</label>
+  <label><input type="checkbox" value="Kitchen Countertop"> Kitchen Countertop</label>
+  <label><input type="checkbox" value="Staircase"> Staircase</label>
+  <label><input type="checkbox" value="Tombstone"> Tombstone</label>
+  <label><input type="checkbox" value="Write-ups"> Write-ups</label>
+  <label><input type="checkbox" value="Pulpit"> Pulpit</label>
+  <label><input type="checkbox" value="Installation Service"> Installation Service</label>
+  <label><input type="checkbox" value="General Contract"> General Contract</label>
+  <label><input type="checkbox" value="Polishing"> Polishing</label>
+  <label><input type="checkbox" value="Cutting"> Cutting</label>
+  <label><input type="checkbox" value="Supply"> Supply</label>
+  <label><input type="checkbox" value="Delivery"> Delivery</label>
+</div>
+
+<div class="buttons">
+<a href="https://wa.me/2349132813864?text=Hello%20Clover%20Home%20Marbles%2C%20I%20am%20interested%20in%20your%20services." target="_blank">
+Chat on WhatsApp
+</a>
+</div>
+
+<button type="button" onclick="submitOrder()">Submit Order</button>
+
+</section>
+
+<section class="address">
+Besides National Block Industry,<br>
+Along Benin/Onitsha Express Way,<br>
+Bonsaac, Asaba, Delta State<br><br>
+
+📞 +234 913 281 3864<br>
+📞 +234 916 317 8828<br>
+📧 cloverhome102@gmail.com
+</section>
+
+<section>
+<iframe src="https://www.google.com/maps?q=Asaba%20Delta%20State&output=embed"></iframe>
+</section>
+
+<script>
+function submitOrder() {
+  const name = document.querySelector('input[type="text"]').value.trim();
+  const phone = document.querySelector('input[type="tel"]').value.trim();
+
+  const selected = Array.from(document.querySelectorAll('.products input:checked'))
+    .map(item => item.value);
+
+  if (!name || !phone || selected.length === 0) {
+    alert("Please fill your name, phone and select at least one service.");
+    return;
+  }
+
+  let message = `Hello Clover Home Marbles,%0A
+My Name: ${name}%0A
+Phone: ${phone}%0A
+I need:%0A- ${selected.join('%0A- ')}%0A
+Please provide details and price.`;
+
+  window.open(`https://wa.me/2349132813864?text=${message}`, '_blank');
+}
+</script>
+
+</body>
+</html>
