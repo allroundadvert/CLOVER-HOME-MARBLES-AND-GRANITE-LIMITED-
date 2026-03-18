@@ -1,27 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLOVER HOME MARBLES AND GRANITES LTD</title>
+
 <style>
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at top, #1a1a1a, #000000);
-  color: #fff;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
 }
 
 /* HEADER */
 header img {
   width: 100%;
   display: block;
-  border-bottom: 3px solid gold;
+  border-bottom: 3px solid #38bdf8;
 }
 
-/* INTRO (GOLD GLASS EFFECT) */
+/* INTRO */
 .intro {
   text-align: center;
   padding: 25px;
-  background: linear-gradient(135deg, rgba(255,215,0,0.2), rgba(255,215,0,0.05));
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid gold;
-  box-shadow: 0 0 20px rgba(255,215,0,0.3);
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-bottom: 2px solid #38bdf8;
+  box-shadow: 0 0 15px rgba(56,189,248,0.3);
   font-weight: bold;
 }
 
@@ -30,9 +36,9 @@ header img {
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
-  background: rgba(255, 215, 0, 0.05);
-  border: 1px solid rgba(255,215,0,0.4);
-  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+  background: rgba(30,41,59,0.7);
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56,189,248,0.2);
 }
 
 /* INPUTS */
@@ -41,38 +47,36 @@ input {
   padding: 12px;
   margin-bottom: 12px;
   border-radius: 6px;
-  border: 1px solid gold;
-  background: #0d0d0d;
-  color: white;
-  outline: none;
+  border: 1px solid #38bdf8;
+  background: #020617;
+  color: #e2e8f0;
 }
 
 input:focus {
-  box-shadow: 0 0 10px gold;
+  box-shadow: 0 0 10px #38bdf8;
+  outline: none;
 }
 
-/* PRODUCTS GRID */
+/* PRODUCTS - 2 COLUMNS FIXED */
 .products {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
 .products label {
-  width: calc(50% - 10px);
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid gold;
-  background: linear-gradient(145deg, #111, #1a1a1a);
+  border: 1px solid #38bdf8;
+  background: linear-gradient(145deg, #020617, #0f172a);
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .products label:hover {
-  background: linear-gradient(145deg, gold, #b8860b);
+  background: #38bdf8;
   color: black;
   transform: scale(1.05);
-  box-shadow: 0 0 15px gold;
+  box-shadow: 0 0 15px #38bdf8;
 }
 
 /* BUTTON */
@@ -84,19 +88,21 @@ button {
   border: none;
   font-weight: bold;
   color: black;
-  background: linear-gradient(90deg, #ffd700, #b8860b, #ffd700);
-  background-size: 200%;
-  animation: shine 3s linear infinite;
-  box-shadow: 0 0 15px gold;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  box-shadow: 0 0 15px #38bdf8;
   cursor: pointer;
 }
 
-@keyframes shine {
-  0% { background-position: 0%; }
-  100% { background-position: 200%; }
+button:hover {
+  transform: scale(1.05);
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
+.buttons {
+  text-align: center;
+  margin-top: 15px;
+}
+
 .buttons a {
   display: inline-block;
   padding: 12px 25px;
@@ -106,11 +112,6 @@ button {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 0 15px #25D366;
-  transition: 0.3s;
-}
-
-.buttons a:hover {
-  transform: scale(1.05);
 }
 
 /* ADDRESS */
@@ -119,9 +120,9 @@ button {
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
-  background: rgba(255,215,0,0.05);
-  border: 1px solid gold;
-  box-shadow: 0 0 15px rgba(255,215,0,0.2);
+  background: rgba(30,41,59,0.6);
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 15px rgba(56,189,248,0.2);
 }
 
 /* MAP */
@@ -131,3 +132,94 @@ iframe {
   border: none;
 }
 </style>
+</head>
+
+<body>
+
+<header>
+<img src="https://raw.githubusercontent.com/allroundadvert/CLOVER-HOME-MARBLES-AND-GRANITE-LIMITED-/de862d291044131d7efdc7709b37a285138a52ae/Screenshot_20260318-151527.jpg">
+</header>
+
+<div class="intro">
+CLOVER HOME MARBLES AND GRANITES LTD <br>
+Marbles and Granites Slab / Floor Tiles Supplier <br><br>
+
+SERVICES:<br>
+Installation of Marbles, Granites Slab & Floor Tiles, Kitchen Countertops, Staircase, Tombstone, Write-ups, Pulpit, General Contractors<br><br>
+
+BENEFITS:<br>
+Quality Products, Excellent Service
+</div>
+
+<section class="form-section">
+<h2>Place Your Order</h2>
+
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Your Phone" required>
+
+<div class="products">
+  <label><input type="checkbox" value="Marble Slab"> Marble Slab</label>
+  <label><input type="checkbox" value="Granite Slab"> Granite Slab</label>
+  <label><input type="checkbox" value="Floor Tiles"> Floor Tiles</label>
+  <label><input type="checkbox" value="Kitchen Countertop"> Kitchen Countertop</label>
+  <label><input type="checkbox" value="Staircase"> Staircase</label>
+  <label><input type="checkbox" value="Tombstone"> Tombstone</label>
+  <label><input type="checkbox" value="Write-ups"> Write-ups</label>
+  <label><input type="checkbox" value="Pulpit"> Pulpit</label>
+  <label><input type="checkbox" value="Installation Service"> Installation Service</label>
+  <label><input type="checkbox" value="General Contract"> General Contract</label>
+  <label><input type="checkbox" value="Polishing"> Polishing</label>
+  <label><input type="checkbox" value="Cutting"> Cutting</label>
+  <label><input type="checkbox" value="Supply"> Supply</label>
+  <label><input type="checkbox" value="Delivery"> Delivery</label>
+</div>
+
+<div class="buttons">
+<a href="https://wa.me/2349132813864?text=Hello%20Clover%20Home%20Marbles%2C%20I%20am%20interested%20in%20your%20services." target="_blank">
+Chat on WhatsApp
+</a>
+</div>
+
+<button type="button" onclick="submitOrder()">Submit Order</button>
+
+</section>
+
+<section class="address">
+Besides National Block Industry,<br>
+Along Benin/Onitsha Express Way,<br>
+Bonsaac, Asaba, Delta State<br><br>
+
+📞 +234 913 281 3864<br>
+📞 +234 916 317 8828<br>
+📧 cloverhome102@gmail.com
+</section>
+
+<section>
+<iframe src="https://www.google.com/maps?q=Asaba%20Delta%20State&output=embed"></iframe>
+</section>
+
+<script>
+function submitOrder() {
+  const name = document.querySelector('input[type="text"]').value.trim();
+  const phone = document.querySelector('input[type="tel"]').value.trim();
+
+  const selected = Array.from(document.querySelectorAll('.products input:checked'))
+    .map(item => item.value);
+
+  if (!name || !phone || selected.length === 0) {
+    alert("Please fill your name, phone and select at least one service.");
+    return;
+  }
+
+  let message = `Hello Clover Home Marbles,%0A
+My Name: ${name}%0A
+Phone: ${phone}%0A
+I need:%0A- ${selected.join('%0A- ')}%0A
+Please provide details and price.`;
+
+  window.open(`https://wa.me/2349132813864?text=${message}`, '_blank');
+}
+</script>
+
+</body>
+</html>
